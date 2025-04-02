@@ -1,0 +1,9 @@
+services:
+  ts:
+    image: node:20-buster
+    tty: true
+    ports:
+      - "9000:9000"
+    volumes:
+      - ./ts_basic:/app
+    working_dir: /app

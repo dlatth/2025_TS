@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowJs": true,
+    "jsx": "preserve",
+    "lib": ["ES2016", "DOM"],
+    "outDir": "./dist",
+    "baseUrl": "./src"
+  }
+}
