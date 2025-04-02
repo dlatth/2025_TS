@@ -5,3 +5,4 @@
 3. npm install
 4. npm run build
 5. npm run start
+6. 브라우저로 localhost:9000 접속
