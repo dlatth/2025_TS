@@ -9,7 +9,7 @@
   "parserOptions": {
     "ecmaVersion": 2020,
     "sourceType": "module",
-    "project": "./tsconfig.json"
+    "project": "TypeScript/ts_basic/tsconfig.json"
   },
   "root": true,
   "rules": {}

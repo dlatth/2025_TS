@@ -10,6 +10,8 @@
     "jsx": "preserve",
     "lib": ["ES2016", "DOM"],
     "outDir": "./dist",
-    "baseUrl": "./src"
-  }
+    "rootDir": "./src"
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
 }
