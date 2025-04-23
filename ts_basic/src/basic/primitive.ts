@@ -1,7 +1,6 @@
 export default function primitiveSample() {
   console.log('YJU');
-  const name: string = 'JIT'; // 형추론으로 인해 let name = 'JIT'으로도 가능
-  // name = 123 // 타입 체크로 에러 발생
+  const name: string = 'JIT';
   console.log('primitive sample 1 : ', typeof name, name);
 
   const age: number = 20;

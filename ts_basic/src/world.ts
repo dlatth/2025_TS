@@ -1,5 +1,5 @@
 export default class World {
-  message: string; // property
+  message: string;
 
   constructor(message: string) {
     // 생성자(초기화)
