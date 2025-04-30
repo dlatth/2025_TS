@@ -31,3 +31,11 @@ type FullLogMessage = {
 export const logMessage6: FullLogMessage = (message) => {
   console.log('Function basic sample 6: ', message);
 };
+
+export const add = (a: number | string, b: number | string) => {
+  return Number(a) + Number(b);
+};
+
+export const add2 = (a: number, b: number, c?: number) => {
+  return a + b + (c || 0);
+};
