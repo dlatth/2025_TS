@@ -48,8 +48,15 @@
 // console.log(add2(1, 2));
 // console.log(add2(1, 2, 3));
 
-import objectSample from './object/object';
+/* import objectSample from './object/object';
 import typeAliasSample from './object/alias';
 
 objectSample();
 typeAliasSample();
+ */
+
+import arraySample from './array/array';
+import tupleSample from './array/tuple';
+
+arraySample();
+tupleSample();
