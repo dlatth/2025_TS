@@ -55,8 +55,14 @@ objectSample();
 typeAliasSample();
  */
 
-import arraySample from './array/array';
+/* import arraySample from './array/array';
 import tupleSample from './array/tuple';
 
 arraySample();
-tupleSample();
+tupleSample(); */
+
+import genericsSample from './generics/basic';
+import advancedSample from './generics/advanced';
+
+genericsSample();
+advancedSample();
