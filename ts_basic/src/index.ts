@@ -67,8 +67,14 @@ import advancedSample from './generics/advanced';
 genericsSample();
 advancedSample(); */
 
-import polymorphismSample from './generics/polymorphism';
+/* import polymorphismSample from './generics/polymorphism';
 import resultSample from './generics/result';
 
 polymorphismSample();
-resultSample();
+resultSample(); */
+
+import dict from './oop/dict';
+import shogi from './oop/shogi';
+
+dict.all();
+shogi.all();
