@@ -61,8 +61,14 @@ import tupleSample from './array/tuple';
 arraySample();
 tupleSample(); */
 
-import genericsSample from './generics/basic';
+/* import genericsSample from './generics/basic';
 import advancedSample from './generics/advanced';
 
 genericsSample();
-advancedSample();
+advancedSample(); */
+
+import polymorphismSample from './generics/polymorphism';
+import resultSample from './generics/result';
+
+polymorphismSample();
+resultSample();

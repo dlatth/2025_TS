@@ -45,7 +45,14 @@ const movies = mapMovieRatings(['인터스텔라:9.3', '인셉션:9.2', '듄:8.8
 
 console.log('영화 평점 변환:', movies);
 
+type ForEach<T> = (array: T[], callback: (item: T) => void) => void;
 type Filter<T> = (array: T[], predicate: (item: T) => boolean) => T[];
+
+const forEachMovie: ForEach<{ title: string; rating: number; stars: string }> = (array, callback) => {
+  for (let i = 0; i < array.length; i++) {
+    callback(array[i]);
+  }
+};
 
 const filterHighRatedMovies: Filter<{ title: string; rating: number; stars: string }> = (array, predicate) => {
   const result = [];
@@ -57,12 +64,13 @@ const filterHighRatedMovies: Filter<{ title: string; rating: number; stars: stri
   return result;
 };
 
-const movieStars = [
-  { title: '인터스텔라', rating: 9.3, stars: '⭐⭐⭐⭐⭐⭐⭐⭐⭐' },
-  { title: '인셉션', rating: 9.2, stars: '⭐⭐⭐⭐⭐⭐⭐⭐⭐' },
-  { title: '듄', rating: 8.8, stars: '⭐⭐⭐⭐⭐⭐⭐⭐' },
-  { title: '테넷', rating: 8.5, stars: '⭐⭐⭐⭐⭐⭐⭐⭐' },
-];
+console.log('\n모든 영화 평점:');
+forEachMovie(movies, (movie) => {
+  console.log(`${movie.title}: ${movie.stars} (${movie.rating}점)`);
+});
 
-const highRatedMovies = filterHighRatedMovies(movieStars, (movieStars) => movieStars.rating >= 9.0);
-console.log('9점 이상 영화:', highRatedMovies);
+const highRatedMovies = filterHighRatedMovies(movies, (movie) => movie.rating >= 9.0);
+console.log('\n9점 이상 영화:');
+forEachMovie(highRatedMovies, (movie) => {
+  console.log(`${movie.title}: ${movie.stars} (${movie.rating}점)`);
+});
