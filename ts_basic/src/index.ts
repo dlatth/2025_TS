@@ -73,8 +73,24 @@ import resultSample from './generics/result';
 polymorphismSample();
 resultSample(); */
 
-import dict from './oop/dict';
-import shogi from './oop/shogi';
+/* import dict from './oop/dict';
+dict.all(); */
 
-dict.all();
-shogi.all();
+/* import Game from './oop/shogi';
+
+const game = new Game();
+
+game.playTurn(1, '1', 2, '2'); */
+
+/* import interfaceSample from './interface/interface';
+
+interfaceSample();
+
+import abstractSample from './interface/abstract';
+
+abstractSample();
+ */
+
+import storageSample from './interface/storage';
+
+storageSample();
