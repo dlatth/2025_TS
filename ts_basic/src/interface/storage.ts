@@ -1,3 +1,5 @@
+import { Player2 } from './abstract';
+
 export default function storageSample() {
   interface StorageInterface<T> {
     [key: string]: T;
@@ -75,4 +77,30 @@ export default function storageSample() {
   console.log(numberStorage.get('score'));
   numberStorage.remove('age');
   numberStorage.clear();
+
+  const playerStorage = new LocalStorage<Player2>();
+  // Player2 객체 저장소 테스트
+  console.log('\n=== Player2 객체 저장소 테스트 ===');
+
+  const player1 = new Player2('Soyeon', 'Lim');
+  const player2 = new Player2('Kim', 'Min');
+
+  playerStorage.set('player1', player1);
+  playerStorage.set('player2', player2);
+
+  const retrievedPlayer1 = playerStorage.get('player1');
+  console.log(retrievedPlayer1);
+  if (retrievedPlayer1) {
+    console.log(retrievedPlayer1.sayHi('안녕하세요'));
+  }
+
+  playerStorage.update('player1', new Player2('Soyeon', 'Lim'));
+  console.log(playerStorage.get('player1'));
+  const updatedPlayer1 = playerStorage.get('player1');
+  if (updatedPlayer1) {
+    console.log(updatedPlayer1.sayHi('반갑습니다'));
+  }
+
+  playerStorage.remove('player2');
+  playerStorage.clear();
 }
