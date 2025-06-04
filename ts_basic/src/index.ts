@@ -91,6 +91,14 @@ import abstractSample from './interface/abstract';
 abstractSample();
  */
 
-import storageSample from './interface/storage';
+/* import storageSample from './interface/storage';
 
-storageSample();
+storageSample(); */
+
+/* import callbackSample from './asynchronous/callback';
+import promiseSample from './asynchronous/promise'; */
+import asyncAwaitSample from './asynchronous/asyncAwait';
+
+/* callbackSample();
+promiseSample(); */
+asyncAwaitSample();
